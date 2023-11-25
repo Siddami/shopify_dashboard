@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter" sans-serif;
+    font-size: 16px;
+}
+
+:root{
+    --bg-color: #ffffff;
+    --text-color: #000000;
+}
+
+/* NAVBAR */
+
+.navbar{
+    background: var(--grey-grey-300, #1A1A1A);
+    display: flex;
+    padding: 12px 16px;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--bg-color);
+    margin-bottom: 40px;
+}
+
+.navbar img{
+    width: 105px;
+    height: 30px;
+}
+
+.form--item{
+    display: flex;
+    width: 480px;
+    height: 32px;
+    padding: 8px;
+    align-items: center;
+    border: 1px solid var(--stroke-s-200, #616161);
+    border-radius: 8px;
+    background: var(--grey-grey-200, #303030);
+    gap: 4px;
+}
+
+.form--item svg{
+    width: 12px;
+    height: 16px;
+    flex-shrink: 0;
+}
+
+.form--item input{
+    background: transparent;
+    border: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+.right-align{
+    display: flex;
+    height: 28px;
+    padding: 9px 5px 10px 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-align svg {
+    border-radius: 8px;
+    background: var(--grey-grey-200, #303030);
+    width: 32px;
+    padding: 5px;
+    margin-right: 8px;
+}
+
+.right-align p{
+    background: var(--grey-grey-200, #303030);
+    padding: 10px 2px;
+    border-radius: 6px;
+}
+
+.right-align span{
+    border-radius: 6px;
+    background: #36FBA1;
+    color: rgba(0, 0, 0, 0.40);
+    text-align: center;
+    padding: 8px;
+}
+
+/* MAIN */
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    gap: 16px;
+    width: 800px;
+}
+
+.main-content .top--main--black{
+    display: flex;
+    width: 100%;
+    padding: 12px 8px 12px 16px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    background: var(--grey-grey-300, #1A1A1A);
+    color: var(--bg-color);
+}
+
+.top--main--black .select-cancel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.top--main--black .select-cancel button{
+    padding: 6px 12px;
+    border-radius: 6px;
+    background: var(--White, #FFF);
+    box-shadow: 0px -1px 0px 0px #B5B5B5 inset;
+    font-size: 14px;
+}
+
+.dropdown--container{
+    border-radius: 18px;
+    border: 1px solid var(--stroke-s-50, #DBDBDB);
+    background: var(--White, #FFF);
+    box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.top--main--white .info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.dropdown{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+.dropdown--flex{
+    display: flex;
+    padding: 8px;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    gap: 96px;
+}
+
+.dropdown--flex img{
+    width: 156.145px;
+    height: 120px;
+}
+
+.dropdown--flex .details{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 70%;
+    gap: 10px;
+}
+
+.details .details--info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.details--info div p{
+    color:#616161
+}
+
+.details--info div a{
+    text-decoration: none;
+    font-weight: 600;
+    color: rgb(16, 16, 235);
+}
+
+.details--info .buttons{
+    display: inline-flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.details--info .add--product{
+    display: flex;
+    padding: 6px 12px;
+    align-items: center;
+    gap: 8px;
+    color: #FFF;
+    border-radius: 6px;
+    border-top: 1.5px solid var(--stroke-light-100, rgba(255, 255, 255, 0.20));
+    border-right: 1.5px solid var(--stroke-light-100, rgba(255, 255, 255, 0.20));
+    border-left: 1.5px solid var(--stroke-light-100, rgba(255, 255, 255, 0.20));
+    background: #404040;
+    box-shadow: 0px 0px 0px 1.5px #333, 0px 1px 0px 1.5px #333, 0px 2px 0px 0px #000;
+}
+
+.details--info .import{
+    background: transparent;
+    border: none;
+}
